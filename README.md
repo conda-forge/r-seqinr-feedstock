@@ -14,14 +14,16 @@ Summary: Exploratory data analysis and data visualization for biological sequenc
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-seqinr-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-seqinr-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-seqinr-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-seqinr-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-seqinr-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-seqinr-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-seqinr-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-seqinr-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-seqinr-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-seqinr-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-seqinr-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-seqinr-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-seqinr/badges/version.svg)](https://anaconda.org/conda-forge/r-seqinr)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-seqinr/badges/downloads.svg)](https://anaconda.org/conda-forge/r-seqinr)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--seqinr-green.svg)](https://anaconda.org/conda-forge/r-seqinr) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-seqinr.svg)](https://anaconda.org/conda-forge/r-seqinr) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-seqinr.svg)](https://anaconda.org/conda-forge/r-seqinr) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-seqinr.svg)](https://anaconda.org/conda-forge/r-seqinr) |
 
 Installing r-seqinr
 ===================

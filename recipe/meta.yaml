@@ -16,7 +16,8 @@ source:
   sha256: 162a347495fd52cbb62e8187a4692e7c50b9fa62123c5ef98f2744c98a05fb9f
 
 build:
-  number: 0
+  merge_build_host: True  # [win]
+  number: 1
   skip: true  # [win32]
 
   rpaths:
@@ -25,18 +26,18 @@ build:
 
 requirements:
   build:
+    - posix                # [win]
+    - {{ compiler('c') }}        # [unix]
+    - {{ compiler('m2w64_c') }}  # [win]
+  host:
     - r-base
     - r-ade4
     - r-segmented
-    - posix                # [win]
-    - {{native}}toolchain  # [win]
-    - gcc                  # [not win]
 
   run:
     - r-base
     - r-ade4
     - r-segmented
-    - libgcc  # [not win]
 
 test:
   commands:
@@ -50,7 +51,7 @@ about:
     protein) data. Seqinr includes  utilities for sequence data management under the
     ACNUC system described in Gouy, M. et al. (1984) Nucleic Acids Res. 12
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}\/lib\/R\/share\/licenses\/GPL-3'  # [unix]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
   license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
 extra:
    recipe-maintainers:

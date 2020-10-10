@@ -1,4 +1,4 @@
-{% set version = '3.6-1' %}
+{% set version = "4.2-4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/seqinr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/seqinr/seqinr_{{ version }}.tar.gz
-  sha256: c44fc8922ef410da3c3b5ca117cdbec55ccb546c9e6d96c01ede44398dfa6048
+  sha256: 23cd0c1a6fc82e4fe5dd65cafe1e5f925ce3fc72e3ac0b2a62b1b6136019805f
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -46,12 +46,10 @@ test:
 about:
   home: http://seqinr.r-forge.r-project.org/
   license: GPL-2
-  summary: Exploratory data analysis and data visualization for biological sequence (DNA and
-    protein) data. Seqinr includes  utilities for sequence data management under the
-    ACNUC system described in Gouy, M. et al. (1984) Nucleic Acids Res. 12:121-127 <doi:10.1093/nar/12.1Part1.121>.
+  summary: Exploratory data analysis and data visualization for biological sequence (DNA and protein) data. Seqinr includes  utilities for sequence data management under the ACNUC system described in Gouy, M. et al. (1984) Nucleic Acids Res. 12:121-127 <doi:10.1093/nar/12.1Part1.121>.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:

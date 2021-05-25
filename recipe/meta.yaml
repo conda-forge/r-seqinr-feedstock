@@ -45,7 +45,7 @@ test:
 
 about:
   home: http://seqinr.r-forge.r-project.org/
-  license: GPL-2
+  license: GPL-2.0-or-later
   summary: Exploratory data analysis and data visualization for biological sequence (DNA and protein) data. Seqinr includes  utilities for sequence data management under the ACNUC system described in Gouy, M. et al. (1984) Nucleic Acids Res. 12:121-127 <doi:10.1093/nar/12.1Part1.121>.
   license_family: GPL2
   license_file:

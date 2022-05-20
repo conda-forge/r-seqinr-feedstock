@@ -1,4 +1,4 @@
-{% set version = "4.2-8" %}
+{% set version = "4.2-16" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/seqinr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/seqinr/seqinr_{{ version }}.tar.gz
-  sha256: 584b34e9dec0320cef02096eb356a0f6115bbd24356cf62e67356963e9d5e9f7
+  sha256: c4f3253832fc255197bdce7b4dd381db606c6b787d2e888751b4963acf3a4032
 
 build:
   merge_build_host: true  # [win]

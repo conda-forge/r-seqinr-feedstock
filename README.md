@@ -1,11 +1,22 @@
+About r-seqinr-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-seqinr-feedstock/blob/main/LICENSE.txt)
+
 About r-seqinr
-==============
+--------------
 
 Home: http://seqinr.r-forge.r-project.org/
 
 Package license: GPL-2.0-or-later
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-seqinr-feedstock/blob/main/LICENSE.txt)
+Summary: Exploratory data analysis and data visualization for biological sequence (DNA and protein) data. Seqinr includes  utilities for sequence data management under the ACNUC system described in Gouy, M. et al. (1984) Nucleic Acids Res. 12:121-127 <doi:10.1093/nar/12.1Part1.121>.
+About r-seqinr
+--------------
+
+Home: http://seqinr.r-forge.r-project.org/
+
+Package license: GPL-2.0-or-later
 
 Summary: Exploratory data analysis and data visualization for biological sequence (DNA and protein) data. Seqinr includes  utilities for sequence data management under the ACNUC system described in Gouy, M. et al. (1984) Nucleic Acids Res. 12:121-127 <doi:10.1093/nar/12.1Part1.121>.
 

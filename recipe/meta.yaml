@@ -12,7 +12,7 @@ source:
   sha256: 931a62a091a7aaaa5efadb1fe85f29e861e2506b75710ba3a6be9b58cb14b225
 
 build:
-  number: 1
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
@@ -28,10 +28,14 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base                 # [build_platform != target_platform]
+    - r-ade4                       # [build_platform != target_platform]
+    - r-segmented                  # [build_platform != target_platform]
   host:
     - r-base
     - r-ade4
     - r-segmented
+    - zlib
   run:
     - r-base
     - r-ade4

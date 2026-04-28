@@ -1,4 +1,4 @@
-{% set version = "4.2-36" %}
+{% set version = "4.2-44" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/seqinr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/seqinr/seqinr_{{ version }}.tar.gz
-  sha256: 931a62a091a7aaaa5efadb1fe85f29e861e2506b75710ba3a6be9b58cb14b225
+  sha256: 09dc45c9c3c23317c4bf3f661d9f6333a90818f29b32075b28dedf310febfd19
 
 build:
-  number: 3
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
